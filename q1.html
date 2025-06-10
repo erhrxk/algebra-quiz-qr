@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Soalan Algebra 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Soalan Algebra 1</h2>
+  <p>Selesaikan: <strong>2x + 3 = 11</strong></p>
+  <button onclick="checkAnswer('A')">A. x = 4</button>
+  <button onclick="checkAnswer('B')">B. x = 7</button>
+  <button onclick="checkAnswer('C')">C. x = 5</button>
+
+  <div id="feedback"></div>
+
+  <script>
+    function checkAnswer(choice) {
+      const feedback = document.getElementById('feedback');
+      if (choice === 'A') { feedback.innerHTML = "<p style='color:green;'>2x + 3 = 11 → 2x = 8 → x = 4</p>"; }
+      else if (choice === 'B') { feedback.innerHTML = "<p style='color:red;'>Jawapan betul ialah A. 2x + 3 = 11 → 2x = 8 → x = 4</p>"; }
+      else if (choice === 'C') { feedback.innerHTML = "<p style='color:red;'>Jawapan betul ialah A. 2x + 3 = 11 → 2x = 8 → x = 4</p>"; }
+    }
+  </script>
+</body>
+</html>

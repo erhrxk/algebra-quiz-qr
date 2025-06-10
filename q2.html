@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Soalan Algebra 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Soalan Algebra 2</h2>
+  <p>Selesaikan: <strong>3(x - 2) = 9</strong></p>
+  <button onclick="checkAnswer('A')">A. x = 3</button>
+  <button onclick="checkAnswer('B')">B. x = 5</button>
+  <button onclick="checkAnswer('C')">C. x = 6</button>
+
+  <div id="feedback"></div>
+
+  <script>
+    function checkAnswer(choice) {
+      const feedback = document.getElementById('feedback');
+      if (choice === 'A') { feedback.innerHTML = "<p style='color:red;'>Jawapan betul ialah B. 3(x - 2) = 9 → x - 2 = 3 → x = 5</p>"; }
+      else if (choice === 'B') { feedback.innerHTML = "<p style='color:green;'>3(x - 2) = 9 → x - 2 = 3 → x = 5</p>"; }
+      else if (choice === 'C') { feedback.innerHTML = "<p style='color:red;'>Jawapan betul ialah B. 3(x - 2) = 9 → x - 2 = 3 → x = 5</p>"; }
+    }
+  </script>
+</body>
+</html>
